@@ -1,10 +1,9 @@
-# Microfrontend Prototype and examples
+# Microfrontend prototype for restaurant ordering.
 
 ## What is this?
-This is an demo micro front end web project created with https://single-spa.js.org/.
-It includes examples for nginx and web components but also an prototype for a restaurant ordering application.
+This is an web project created with the library https://single-spa.js.org/.
 
-The prototype has an dotnet backend and a frontend with an app-shell and several different microfrontend components.
+It includes an prototype for a restaurant ordering application.
 
 ## Local development
     
