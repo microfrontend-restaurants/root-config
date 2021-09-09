@@ -7,10 +7,10 @@ It includes an prototype for a restaurant ordering application.
 
 ## Local development
     
-1. **App-Shell**: Single-spa root, bootstrap and loads each SPA
+1. **root-config**: Single-spa root, bootstrap and loads each SPA
 
     ```
-    cd app-shell
+    cd root-config
     npm install
     npm start
     ```
