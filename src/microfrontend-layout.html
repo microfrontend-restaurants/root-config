@@ -1,0 +1,21 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <application name="@microrestaurants/navbar"></application>
+  <main class="container">
+    <route default>
+      <application name="@single-spa/welcome"></application>
+    </route>
+    <route path="restaurants">
+      <application name="@microrestaurants/discover"></application>
+    </route>
+    <route path="order">
+      <application name="@microrestaurants/order"></application>
+    </route>
+  </main>
+</single-spa-router>
