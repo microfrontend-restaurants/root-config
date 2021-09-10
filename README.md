@@ -20,7 +20,7 @@ It includes an prototype for a restaurant ordering application.
     ```
     cd navbar
     npm install
-    npm run serve:single-spa:navbar
+    npm start
     ```
 
 3. **Discover**: Angular 12 application for displaying restaurants
@@ -28,7 +28,7 @@ It includes an prototype for a restaurant ordering application.
     ```
     cd discover
     npm install
-    npm run serve:single-spa:discover
+    npm start
     ```
 
 4. **Order**: Angular 12 application for displaying and handling orders
@@ -36,7 +36,7 @@ It includes an prototype for a restaurant ordering application.
     ```
     cd order
     npm install
-    npm run serve:single-spa:order
+    npm start
     ```
 
 5. **Server**: dotnet 5 WebAPI with services for ordering and restaurants
