@@ -44,3 +44,5 @@ It includes an prototype for a restaurant ordering application.
     cd server
     docker-compose -f "docker-compose.yml" up -d --build
     ```
+
+6. Navigate to http://localhost:9000 in a browser of your choice.
