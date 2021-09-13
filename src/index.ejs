@@ -39,7 +39,7 @@
       }
     }
   </script>
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script" crossorigin="anonymous">
 
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
@@ -83,11 +83,11 @@
   <script>
     System.import('@microrestaurants/root-config');
   </script>
-  <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
+   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
   <style>
-    body {
-      background-color: lightgray;
-    }
+    :root {
+    --bs-body-bg: lightgray;
+    } 
   </style>
 </body>
 </html>
