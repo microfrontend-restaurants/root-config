@@ -32,10 +32,29 @@
     More information about shared dependencies can be found at https://single-spa.js.org/docs/recommended-setup#sharing-with-import-maps.
   -->
   <!-- <script type="systemjs-importmap" src="https://microfrontend-restaurants.surge.sh/importmap.json"></script> -->
+  
+  <!-- Shared dependencies with angular 12 not working -->
+  <!-- <script type="systemjs-importmap">
+    {
+      "imports": {
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+        "single-spa-angular": "https://cdn.jsdelivr.net/npm/single-spa-angular@5.0.2/bundles/single-spa-angular.umd.min.js",
+        "single-spa-angular/internals": "https://cdn.jsdelivr.net/npm/single-spa-angular@5.0.2/bundles/single-spa-angular.umd.min.js"
+        "@angular/core": "https://cdn.jsdelivr.net/npm/@esm-bundle/angular__core@12.2.4/system/es2015/ivy/angular-core.min.js",
+        "@angular/common": "https://cdn.jsdelivr.net/npm/@esm-bundle/angular__common@12.2.4/system/es2015/ivy/angular-common.min.js",
+        "@angular/router": "https://cdn.jsdelivr.net/npm/@esm-bundle/angular__router@12.2.4/system/es2015/ivy/angular-router.min.js",
+        "@angular/platform-browser": "https://cdn.jsdelivr.net/npm/@esm-bundle/angular__platform-browser@12.2.4/system/es2015/ivy/angular-platform-browser.min.js",
+        "rxjs": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.3-fix.0/system/es2015/rxjs.min.js",
+        "rxjs/operators": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.3-fix.0/system/es2015/rxjs-operators.min.js"
+      }
+    }
+  </script> -->
   <script type="systemjs-importmap">
     {
       "imports": {
-        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+        "rxjs": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.0/system/es2015/rxjs.min.js",
+        "rxjs/operators": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.0/system/es2015/rxjs-operators.min.js"
       }
     }
   </script>
@@ -48,7 +67,6 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
         "@microrestaurants/root-config": "//localhost:9000/microrestaurants-root-config.js",
         "@microrestaurants/discover": "http://localhost:4200/main.js",
         "@microrestaurants/order": "http://localhost:4202/main.js",
