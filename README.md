@@ -3,7 +3,7 @@
 ## What is this?
 This is an web project created with the library https://single-spa.js.org/.
 
-It includes an prototype for a restaurant ordering application.
+It includes an prototype for an restaurant ordering application.
 
 ## Local development
     
