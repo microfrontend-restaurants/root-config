@@ -1,5 +1,5 @@
 {
-  "name": "@microrestaurants/root-config",
+  "name": "root-config",
   "version": "1.0.0",
   "scripts": {
     "start": "webpack serve --port 9000 --env isLocal",
