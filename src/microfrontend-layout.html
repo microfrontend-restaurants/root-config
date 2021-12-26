@@ -1,9 +1,7 @@
 <single-spa-router>
   <application name="@microrestaurants/navbar"></application>
   <main class="container">
-    <route default>
-      <application name="@microrestaurants/discover"></application>
-    </route>
+    <redirect from="/" to="/restaurants"></redirect>
     <route path="restaurants">
       <application name="@microrestaurants/discover"></application>
     </route>
