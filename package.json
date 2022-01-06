@@ -16,6 +16,7 @@
     "@babel/eslint-parser": "^7.16.5",
     "@babel/plugin-transform-runtime": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
+    "@babel/preset-typescript": "^7.16.7",
     "@babel/runtime": "^7.16.5",
     "concurrently": "^6.2.1",
     "cross-env": "^7.0.3",
