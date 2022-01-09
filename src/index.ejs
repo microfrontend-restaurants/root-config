@@ -12,38 +12,23 @@
   <script type="systemjs-importmap">
     {
       "imports": {
+        "@microrestaurants/root-config": "//localhost:9000/microrestaurants-root-config.js",
+        "@microrestaurants/discover": "http://localhost:4200/main.js",
+        "@microrestaurants/order": "http://localhost:4202/main.js",
+        "@microrestaurants/navbar": "http://localhost:4201/main.js",
         "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
         "rxjs": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.0/system/es2015/rxjs.min.js",
         "rxjs/operators": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.0/system/es2015/rxjs-operators.min.js"
       }
     }
   </script>
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script" crossorigin="anonymous">
-
-  <% if (isLocal) { %>
-  <script type="systemjs-importmap">
-    {
-      "imports": {
-        "@microrestaurants/root-config": "//localhost:9000/microrestaurants-root-config.js",
-        "@microrestaurants/discover": "http://localhost:4200/main.js",
-        "@microrestaurants/order": "http://localhost:4202/main.js",
-        "@microrestaurants/navbar": "http://localhost:4201/main.js"
-      }
-    }
-  </script>
-  <% } %>
 
   <script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
-  <% if (isLocal) { %>
+  <script src="http://localhost:4206/restaurant-title.js"></script>
   <script src="http://localhost:4205/order-button.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
-  <% } else { %>
-  <script src="http://localhost:4205/order-button.js"></script> <!-- Change to production url -->
-  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
-  <% } %>
 
   <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
 
